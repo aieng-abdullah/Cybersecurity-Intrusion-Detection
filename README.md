@@ -21,7 +21,7 @@ Traditional IDS tools struggle to detect evolving attack vectors and zero-day th
 - **Details**: 50,000+ labeled network and system activity records including user behavior, normal and attack patterns.
 
 🛠️ Key Technologies  
-Python | Scikit-learn | XGBoost | SHAP (Explainable AI) | Pandas | NumPy | Matplotlib | Seaborn | Logging
+Python | Scikit-learn | RandomForestClassifier | SHAP (Explainable AI) | Pandas | NumPy | Matplotlib | Seaborn | Logging
 
 🧰 ML Pipeline Summary
 
