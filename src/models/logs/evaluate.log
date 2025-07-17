@@ -1,0 +1,176 @@
+2025-07-17 11:22:18,264 | INFO | Loding preprocessed data from 'C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\data\preprocess\preprocessed_data.csv'
+2025-07-17 11:22:18,306 | INFO | Data loaded: 9537 sample, (9537, 18) columns (including target)
+2025-07-17 11:22:18,306 | INFO | Loading trained model from 'C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\src\models\output\IDS.joblib'
+2025-07-17 11:22:18,383 | INFO | Model loaded succefully
+2025-07-17 11:22:18,384 | INFO | Starting model evaluation....
+2025-07-17 11:22:18,504 | INFO | 
+classification Report: 
+              precision    recall  f1-score   support
+
+           0       0.93      1.00      0.96      5273
+           1       1.00      0.91      0.95      4264
+
+    accuracy                           0.96      9537
+   macro avg       0.97      0.95      0.96      9537
+weighted avg       0.96      0.96      0.96      9537
+
+2025-07-17 11:22:18,505 | INFO | Acccuracy: 0.9595
+2025-07-17 11:22:19,250 | INFO | Confusion matrix saved to : C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\src\models\output\confusion_matrix.png
+2025-07-17 11:22:19,250 | INFO | Generating SHAP explanation...
+2025-07-17 12:51:30,663 | INFO | Loading preprocessed data from 'C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\data\preprocess\preprocessed_data.csv'
+2025-07-17 12:51:30,697 | INFO | Data loaded: 9537 samples, 18 columns (including target)
+2025-07-17 12:51:30,698 | INFO | Loading trained model from 'C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\src\models\output\IDS.joblib'
+2025-07-17 12:52:03,674 | INFO | Loading preprocessed data from 'C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\data\preprocess\preprocessed_data.csv'
+2025-07-17 12:52:03,707 | INFO | Data loaded: 9537 samples, 18 columns (including target)
+2025-07-17 12:52:03,709 | INFO | Loading trained model from 'C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\src\models\output\IDS.joblib'
+2025-07-17 12:52:03,766 | INFO | Model loaded successfully
+2025-07-17 12:52:03,767 | INFO | Starting model evaluation...
+2025-07-17 12:52:03,882 | INFO | 
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.93      1.00      0.96      5273
+           1       1.00      0.91      0.95      4264
+
+    accuracy                           0.96      9537
+   macro avg       0.97      0.95      0.96      9537
+weighted avg       0.96      0.96      0.96      9537
+
+2025-07-17 12:52:03,882 | INFO | Accuracy: 0.9595
+2025-07-17 12:52:04,262 | INFO | Confusion matrix saved to: C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\src\models\output\confusion_matrix.png
+2025-07-17 12:52:04,263 | INFO | Generating SHAP explanation...
+2025-07-17 13:00:27,034 | INFO | SHAP summary plot saved to: C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\src\models\output\shap_summary.png
+2025-07-17 13:22:16,318 | INFO | Loading preprocessed data from 'C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\data\preprocess\preprocessed_data.csv'
+2025-07-17 13:22:16,357 | INFO | Data loaded: 9537 samples, 18 columns (including target)
+2025-07-17 13:22:16,357 | INFO | Loading trained model from 'C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\src\models\output\IDS.joblib'
+2025-07-17 13:22:16,422 | INFO | Model loaded successfully
+2025-07-17 13:22:16,423 | INFO | Starting model evaluation...
+2025-07-17 13:22:16,536 | INFO | 
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.93      1.00      0.96      5273
+           1       1.00      0.91      0.95      4264
+
+    accuracy                           0.96      9537
+   macro avg       0.97      0.95      0.96      9537
+weighted avg       0.96      0.96      0.96      9537
+
+2025-07-17 13:22:16,537 | INFO | Accuracy: 0.9595
+2025-07-17 13:22:16,939 | INFO | Confusion matrix saved to: C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\src\models\output\confusion_matrix.png
+2025-07-17 13:22:16,940 | INFO | Generating SHAP explanation...
+2025-07-17 13:32:16,024 | INFO | SHAP summary plot saved to: C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\src\models\output\shap_summary.png
+2025-07-17 13:32:16,207 | WARNING | SHAP bar plot failed: list index out of range
+2025-07-17 13:32:16,210 | INFO | Evaluation and explainability complete.
+2025-07-17 13:51:25,223 | INFO | Loading preprocessed data from 'C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\data\preprocess\preprocessed_data.csv'
+2025-07-17 13:51:25,261 | INFO | Data loaded: 9537 samples, 18 columns (including target)
+2025-07-17 13:51:25,262 | INFO | Loading trained model from 'C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\src\models\output\IDS.joblib'
+2025-07-17 13:51:25,331 | INFO | Model loaded successfully
+2025-07-17 13:51:25,332 | INFO | Starting model evaluation...
+2025-07-17 13:51:25,473 | INFO | 
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.93      1.00      0.96      5273
+           1       1.00      0.91      0.95      4264
+
+    accuracy                           0.96      9537
+   macro avg       0.97      0.95      0.96      9537
+weighted avg       0.96      0.96      0.96      9537
+
+2025-07-17 13:51:25,473 | INFO | Accuracy: 0.9595
+2025-07-17 13:51:25,836 | INFO | Confusion matrix saved to: C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\src\models\output\confusion_matrix.png
+2025-07-17 13:51:25,836 | INFO | Generating SHAP explanation...
+2025-07-17 13:59:51,413 | INFO | SHAP summary plot saved to: C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\src\models\output\shap_summary.png
+2025-07-17 13:59:51,647 | WARNING | SHAP bar plot failed: list index out of range
+2025-07-17 13:59:51,650 | INFO | Evaluation and explainability complete.
+2025-07-17 14:16:51,296 | WARNING | SHAP bar plot failed: name 'is_tree_explainer' is not defined
+2025-07-17 14:16:51,297 | INFO | Loading preprocessed data from 'C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\data\preprocess\preprocessed_data.csv'
+2025-07-17 14:16:51,336 | INFO | Data loaded: 9537 samples, 18 columns (including target)
+2025-07-17 14:16:51,336 | INFO | Loading trained model from 'C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\src\models\output\IDS.joblib'
+2025-07-17 14:16:51,396 | INFO | Model loaded successfully
+2025-07-17 14:16:51,396 | INFO | Starting model evaluation...
+2025-07-17 14:16:51,509 | INFO | 
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.93      1.00      0.96      5273
+           1       1.00      0.91      0.95      4264
+
+    accuracy                           0.96      9537
+   macro avg       0.97      0.95      0.96      9537
+weighted avg       0.96      0.96      0.96      9537
+
+2025-07-17 14:16:51,509 | INFO | Accuracy: 0.9595
+2025-07-17 14:16:51,867 | INFO | Confusion matrix saved to: C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\src\models\output\confusion_matrix.png
+2025-07-17 14:16:51,868 | INFO | Generating SHAP explanation...
+2025-07-17 14:17:16,064 | WARNING | SHAP bar plot failed: name 'is_tree_explainer' is not defined
+2025-07-17 14:17:16,065 | INFO | Loading preprocessed data from 'C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\data\preprocess\preprocessed_data.csv'
+2025-07-17 14:17:16,097 | INFO | Data loaded: 9537 samples, 18 columns (including target)
+2025-07-17 14:17:16,098 | INFO | Loading trained model from 'C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\src\models\output\IDS.joblib'
+2025-07-17 14:17:16,157 | INFO | Model loaded successfully
+2025-07-17 14:17:16,157 | INFO | Generating SHAP explanation...
+2025-07-17 14:23:44,320 | INFO | Loading preprocessed data from 'C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\data\preprocess\preprocessed_data.csv'
+2025-07-17 14:23:44,363 | INFO | Data loaded: 9537 samples, 18 columns (including target)
+2025-07-17 14:23:44,363 | INFO | Loading trained model from 'C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\src\models\output\IDS.joblib'
+2025-07-17 14:23:44,492 | INFO | Model loaded successfully
+2025-07-17 14:23:44,492 | INFO | Generating SHAP explanation...
+2025-07-17 14:23:56,357 | INFO | Loading preprocessed data from 'C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\data\preprocess\preprocessed_data.csv'
+2025-07-17 14:23:56,422 | INFO | Data loaded: 9537 samples, 18 columns (including target)
+2025-07-17 14:23:56,422 | INFO | Loading trained model from 'C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\src\models\output\IDS.joblib'
+2025-07-17 14:23:56,548 | INFO | Model loaded successfully
+2025-07-17 14:23:56,549 | INFO | Generating SHAP explanation...
+2025-07-17 14:32:55,162 | INFO | SHAP summary plot saved to: C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\src\models\output\shap_summary.png
+2025-07-17 14:32:55,342 | WARNING | SHAP bar plot failed: list index out of range
+2025-07-17 14:32:55,345 | INFO | Evaluation and explainability complete.
+2025-07-17 14:33:05,022 | INFO | SHAP summary plot saved to: C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\src\models\output\shap_summary.png
+2025-07-17 14:33:05,184 | WARNING | SHAP bar plot failed: list index out of range
+2025-07-17 14:33:05,188 | INFO | Evaluation and explainability complete.
+2025-07-17 14:33:21,129 | INFO | Loading preprocessed data from 'C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\data\preprocess\preprocessed_data.csv'
+2025-07-17 14:33:21,166 | INFO | Data loaded: 9537 samples, 18 columns (including target)
+2025-07-17 14:33:21,167 | INFO | Loading trained model from 'C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\src\models\output\IDS.joblib'
+2025-07-17 14:33:21,236 | INFO | Model loaded successfully
+2025-07-17 14:33:21,236 | INFO | Generating SHAP explanation...
+2025-07-17 14:36:35,718 | INFO | Loading preprocessed data from 'C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\data\preprocess\preprocessed_data.csv'
+2025-07-17 14:36:35,755 | INFO | Data loaded: 9537 samples, 18 columns (including target)
+2025-07-17 14:36:35,755 | INFO | Loading trained model from 'C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\src\models\output\IDS.joblib'
+2025-07-17 14:36:35,824 | INFO | Model loaded successfully
+2025-07-17 14:36:35,824 | INFO | Starting model evaluation...
+2025-07-17 14:36:35,960 | INFO | 
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.93      1.00      0.96      5273
+           1       1.00      0.91      0.95      4264
+
+    accuracy                           0.96      9537
+   macro avg       0.97      0.95      0.96      9537
+weighted avg       0.96      0.96      0.96      9537
+
+2025-07-17 14:36:35,961 | INFO | Accuracy: 0.9595
+2025-07-17 14:36:36,310 | INFO | Confusion matrix saved to: C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\src\models\output\confusion_matrix.png
+2025-07-17 14:36:36,311 | INFO | Generating SHAP explanation...
+2025-07-17 14:45:03,901 | INFO | SHAP summary plot saved to: C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\src\models\output\shap_summary.png
+2025-07-17 14:45:03,911 | WARNING | SHAP bar plot failed: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-07-17 14:45:03,914 | INFO | Evaluation and explainability complete.
+2025-07-17 14:47:38,570 | INFO | Loading preprocessed data from 'C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\data\preprocess\preprocessed_data.csv'
+2025-07-17 14:47:38,618 | INFO | Data loaded: 9537 samples, 18 columns (including target)
+2025-07-17 14:47:38,618 | INFO | Loading trained model from 'C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\src\models\output\IDS.joblib'
+2025-07-17 14:47:38,683 | INFO | Model loaded successfully
+2025-07-17 14:47:38,684 | INFO | Starting model evaluation...
+2025-07-17 14:47:38,806 | INFO | 
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.93      1.00      0.96      5273
+           1       1.00      0.91      0.95      4264
+
+    accuracy                           0.96      9537
+   macro avg       0.97      0.95      0.96      9537
+weighted avg       0.96      0.96      0.96      9537
+
+2025-07-17 14:47:38,807 | INFO | Accuracy: 0.9595
+2025-07-17 14:47:39,167 | INFO | Confusion matrix saved to: C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\src\models\output\confusion_matrix.png
+2025-07-17 14:47:39,168 | INFO | Generating SHAP explanation...
+2025-07-17 14:57:11,642 | INFO | SHAP summary plot saved to: C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\src\models\output\shap_summary.png
+2025-07-17 14:57:11,644 | INFO | Evaluation and explainability complete.
