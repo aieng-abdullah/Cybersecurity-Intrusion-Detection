@@ -1,40 +1,48 @@
-from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel, Field
-import joblib
+from fastapi import FastAPI, File, UploadFile, HTTPException
+from fastapi.responses import JSONResponse
 import pandas as pd
-
-# Absolute model path
-MODEL_PATH = r"C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\src\models\output\IDS.joblib"
+import joblib
+import io
 
 app = FastAPI(
-    title="Advanced Intrusion Detection System API",
-    description="API for network intrusion detection prediction",
-    version="1.0.0"
+    title="Network Intrusion Detection API",
+    description="API to predict intrusions from uploaded network traffic CSV files",
+    version="1.0"
 )
 
+MODEL_PATH = r"C:\Users\teamp\Desktop\Cybersecurity Intrusion Detection\src\models\output\IDS.joblib"
+
+# Load your model once at startup
 try:
     model = joblib.load(MODEL_PATH)
 except Exception as e:
-    raise RuntimeError(f"Failed to load model at startup: {e}")
-
-class NetworkData(BaseModel):
-    duration: float = Field(..., description="Duration of the connection")
-    src_bytes: float = Field(..., description="Bytes sent from source")
-    dst_bytes: float = Field(..., description="Bytes sent to destination")
-    wrong_fragment: float = Field(..., description="Number of wrong fragments")
-    urgent: float = Field(..., description="Number of urgent packets")
-    # Add all other features here with exact names and types
+    raise RuntimeError(f"Failed to load model: {e}")
 
 @app.post("/predict")
-async def predict(data: NetworkData):
+async def predict(file: UploadFile = File(...)):
+    if not file.filename.endswith(".csv"):
+        raise HTTPException(status_code=400, detail="Only CSV files are accepted")
+    
     try:
-        input_df = pd.DataFrame([data.dict()])
-        prediction = model.predict(input_df)[0]
-        probability = model.predict_proba(input_df)[0].tolist() if hasattr(model, "predict_proba") else None
-
-        return {
-            "prediction": int(prediction),
-            "probability": probability
-        }
+        contents = await file.read()
+        df = pd.read_csv(io.BytesIO(contents))
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        raise HTTPException(status_code=400, detail=f"Error reading CSV file: {e}")
+
+    try:
+        # Make predictions
+        preds = model.predict(df)
+        # If model supports probabilities, include them
+        probs = model.predict_proba(df).tolist() if hasattr(model, "predict_proba") else None
+
+        results = []
+        for i, pred in enumerate(preds):
+            res = {"prediction": int(pred)}
+            if probs:
+                res["probability"] = probs[i]
+            results.append(res)
+
+        return JSONResponse(content={"results": results})
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Prediction error: {e}")
