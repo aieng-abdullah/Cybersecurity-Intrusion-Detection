@@ -50,7 +50,7 @@ Python | Scikit-learn | XGBoost | SHAP (Explainable AI) | Pandas | NumPy | Matpl
 SHAP summary and bar plots saved to:
 
 src/models/output/shap_summary.png
-src/models/output/shap_bar.png
+
 
 
 
